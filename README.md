@@ -8,4 +8,4 @@
 ## Локальный запуск проекта
 
 npm i
-npm run vite
+npm run dev
