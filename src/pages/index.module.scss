@@ -1,0 +1,10 @@
+@import "@/shared/styles/vars.scss";
+
+.main {
+  margin: 0 16.5vw;
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: $breakpoint-3xl) {
+    margin: 0 8vw;
+  }
+}

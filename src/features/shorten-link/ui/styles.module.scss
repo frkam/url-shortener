@@ -1,0 +1,84 @@
+@import "@/shared/styles/vars.scss";
+
+.shortenUrl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: $color-white;
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
+  max-width: 40rem;
+
+  @media only screen and (max-width: $breakpoint-md) {
+    max-width: 100%;
+  }
+
+  &__form {
+    display: flex;
+    height: 3rem;
+    gap: 2rem;
+
+    @media only screen and (max-width: $breakpoint-md) {
+      gap: 1rem;
+    }
+  }
+
+  &__heading {
+    color: black;
+    font-size: 1.8rem;
+  }
+}
+
+.form {
+  @media only screen and (max-width: $breakpoint-md) {
+    width: 100%;
+  }
+
+  &__input {
+    width: 22.5rem;
+    height: 100%;
+    border-radius: 1rem;
+    border: 2px solid $color-grey;
+    padding: 0 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1.4rem;
+    @media only screen and (max-width: $breakpoint-md) {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    background-color: $color-yellow;
+    color: $color-black;
+    font-size: 1.6rem;
+    cursor: pointer;
+    width: 11.2rem;
+    border-radius: 1rem;
+    border: none;
+    transition: background-color 0.5s;
+    padding: 0 1rem;
+
+    &:hover {
+      background-color: $color-yellow-light;
+    }
+
+    &:disabled {
+      background-color: $color-grey;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__error {
+    display: block;
+    position: absolute;
+    bottom: 15;
+    font-size: 1.2rem;
+    color: $color-red;
+    font-weight: 500;
+  }
+}

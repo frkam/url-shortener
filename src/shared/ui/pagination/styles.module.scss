@@ -1,0 +1,47 @@
+@import "@/shared/styles/vars.scss";
+
+.navigation {
+  max-width: fit-content;
+  font-weight: 500;
+  margin-top: auto;
+  align-self: flex-end;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    border-radius: 1rem;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+    &--active {
+      background-color: $color-yellow;
+    }
+
+    &:disabled {
+      cursor: default;
+    }
+
+    &--disabled {
+      cursor: default;
+    }
+  }
+
+  &__icon {
+    &--disabled > * {
+      transition: stroke 0.2 s;
+      stroke: $color-grey-dark;
+    }
+  }
+}

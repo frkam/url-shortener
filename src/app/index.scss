@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700;800;900&display=swap");
+@import "@/shared/styles/vars.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: $font-primary;
+
+  @media only screen and (max-width: $breakpoint-2xl) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    font-size: 38.5%;
+  }
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: $color-beige;
+}

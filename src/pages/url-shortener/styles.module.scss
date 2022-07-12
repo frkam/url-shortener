@@ -1,0 +1,14 @@
+@import "@/shared/styles/vars.scss";
+
+.urlShortener {
+  display: flex;
+  justify-content: space-between;
+  height: 69rem;
+  margin-bottom: 1rem;
+
+  @media only screen and (max-width: $breakpoint-xl) {
+    flex-direction: column;
+    height: 100%;
+    gap: 7rem;
+  }
+}

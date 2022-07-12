@@ -1,0 +1,11 @@
+@import "@/shared/styles/vars.scss";
+
+.linksList {
+  font-size: 1.6rem;
+  width: 100%;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}

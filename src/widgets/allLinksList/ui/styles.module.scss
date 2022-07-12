@@ -1,0 +1,51 @@
+@import "@/shared/styles/vars.scss";
+
+.allLinksList {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  height: 100%;
+
+  @media only screen and (max-width: $breakpoint-xl) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__error {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  &__heading {
+    margin-bottom: 1.5rem;
+  }
+
+  &__list {
+    background-color: $color-white;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+    justify-content: space-between;
+    
+    position: relative;
+  }
+
+  &__spinner {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    bottom: 4.5%;
+    left: 3.5%;
+
+    @media only screen and (max-width: $breakpoint-md) {
+      width: 1.6rem;
+      height: 1.6rem;
+      left: 5%;
+    }
+  }
+}
