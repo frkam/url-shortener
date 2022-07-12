@@ -7,5 +7,5 @@
 
 ## Локальный запуск проекта
 
-npm i
-npm run dev
+`npm i`
+`npm run dev`
