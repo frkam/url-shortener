@@ -1,5 +1,5 @@
 import { LinksList } from "@/entities/links"
-import { ShortenLink } from "@/features/shorten-link"
+import { ShortenLink } from "@/features/shortenLink"
 import { useAppSelector } from "@/shared/lib"
 import { Pagination } from "@/shared/ui"
 import { useMemo, useState } from "react"
